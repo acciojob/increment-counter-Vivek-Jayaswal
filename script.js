@@ -1,9 +1,11 @@
 //your JS code here. If required.
-const button = document.getElementById("btn");
-const para =  document.querySelector("p");
+const incrementBtn = document.getElementById("incrementBtn");
+const counterElement =  document.querySelector("#counter");
 
-let count = 0;
-button.addEventListener("click", ()=>{
-	count++;
-	para.innerText = count;
-});
+let counterValue = 0;
+    function handleIncrement() {
+      alert(counterValue);
+      counterValue++;
+      counterElement.textContent = counterValue;
+    }
+    incrementBtn.addEventListener('click', handleIncrement);
